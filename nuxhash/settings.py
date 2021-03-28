@@ -11,7 +11,7 @@ SETTINGS_FILENAME = 'settings.conf'
 BENCHMARKS_FILENAME = 'benchmarks.json'
 DEFAULT_SETTINGS = {
     'nicehash': {
-        'wallet': '3CJFb2B66m7UoJAVjB6otBQYQ2UFnAXhuf',
+        'wallet': '',
         'workername': 'nuxhash',
         'region': 'eu',
         'api_organization': '',
@@ -19,7 +19,7 @@ DEFAULT_SETTINGS = {
         'api_secret': ''
         },
     'switching': {
-        'interval': 60,
+        'interval': 1,
         'threshold': 0.1
         },
     'gui': {
