@@ -11,8 +11,9 @@ verify)
 download)
         curl -L -O "https://github.com/nicehash/excavator/releases/download/v${VERSION}/excavator_${VERSION}_amd64.deb"
         ar x "excavator_${VERSION}_amd64.deb" data.tar.xz
-        tar xf data.tar.xz --strip-components 4 ./opt/excavator/bin/ram
+        tar xf data.tar.xz --strip-components 4 ./opt/excavator/bin/excavator
         rm -f "excavator_${VERSION}_amd64.deb" data.tar.xz
+   
         exit 0
         ;;
 esac
