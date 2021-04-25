@@ -1,4 +1,4 @@
-from nuxhash.miners.excavator import Excavator
+from nuxhash.miners.ramji import Excavator
 
 
 all_miners = [Excavator]
