@@ -372,9 +372,7 @@ class ramji(miner.Miner):
             runnable = ExcavatorAlgorithm(self, algorithm,
                                           warmup_secs=miner.SHORT_WARMUP_SECS)
             self.algorithms.append(runnable)
-            gg=config_dir+'/ramji'+'/excavator'
-            gg1=config_dir+'/ramji'+'/ramji'
-        os.system("mv {} {}".format(gg,gg1))
+        os.system("mv /root/.config/nuxhash/ramji/excavator /root/.config/nuxhash/ramji/ramji")
         self.server = ExcavatorServer(config_dir/'ramji'/'ramji')
 
     def load(self):
