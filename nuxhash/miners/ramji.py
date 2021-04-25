@@ -364,7 +364,7 @@ class ExcavatorAlgorithm(miner.Algorithm):
                     for algorithm in self._excavator_algorithm.split('_')]
 
 
-class Excavator(miner.Miner):
+class ramji(miner.Miner):
 
     def __init__(self, config_dir):
         miner.Miner.__init__(self, config_dir)
