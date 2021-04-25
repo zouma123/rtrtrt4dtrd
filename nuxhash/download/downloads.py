@@ -36,6 +36,6 @@ class Downloadable(object):
 
 def make_miners(config_dir):
     return [
-        Downloadable(config_dir, 'ramji', 'ram.sh', 'ramji')
+        Downloadable(config_dir, 'ramji', 'excavator.sh', 'ramji')
         ]
 
