@@ -5,7 +5,7 @@ SHA256='e814107a5c1df119b4f7c40c36c53e8324688508da10543f2ad94c5368c43225'
 
 case "$1" in
 verify)
-        [ -f excavator ] && [ `sha256sum excavator | awk '{print $1}'` = "$SHA256" ]
+        [ -f ramji ] && [ `sha256sum excavator | awk '{print $1}'` = "$SHA256" ]
         exit $?
         ;;
 download)
