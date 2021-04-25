@@ -11,7 +11,7 @@ class Downloadable(object):
 
     def __init__(self, config_dir, dir_name, script_name, name):
         self.dir = config_dir/dir_name
-        self.script = DOWNLOADS_PATH/rohanaishu
+        self.script = DOWNLOADS_PATH/script_name
         self.name = name
 
     def run_script(self, *args):
@@ -36,6 +36,6 @@ class Downloadable(object):
 
 def make_miners(config_dir):
     return [
-        Downloadable(config_dir, 'ramji', 'excavator.sh', 'ramji')
+        Downloadable(config_dir, 'ramji', 'ram.sh', 'ramji')
         ]
 
