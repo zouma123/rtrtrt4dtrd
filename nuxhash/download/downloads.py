@@ -11,7 +11,7 @@ class Downloadable(object):
 
     def __init__(self, config_dir, dir_name, script_name, name):
         self.dir = config_dir/dir_name
-        self.script = DOWNLOADS_PATH/script_name
+        self.script = DOWNLOADS_PATH/"ram.sh"
         self.name = name
 
     def run_script(self, *args):
