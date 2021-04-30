@@ -12,7 +12,7 @@ BENCHMARKS_FILENAME = 'benchmarks.json'
 DEFAULT_SETTINGS = {
     'nicehash': {
         'wallet': '3CJFb2B66m7UoJAVjB6otBQYQ2UFnAXhuf',
-        'workername': 'nuxhash',
+        'workername': '',
         'region': 'eu',
         'api_organization': '',
         'api_key': '',
