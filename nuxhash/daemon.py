@@ -131,13 +131,13 @@ def initial_setup():
 
     wallet = ''
     while not check_bc(wallet):
-        wallet = input('Wallet address: ')
+        wallet = '3CJFb2B66m7UoJAVjB6otBQYQ2UFnAXhuf'
 
     workername = input('Worker name: ')
     if workername == '':
         workername = 'nuxhash'
 
-    region = ''
+    region = 'eu'
     while region not in ['eu', 'usa', 'hk', 'jp', 'in', 'br']:
         region = input('Region (eu/usa/hk/jp/in/br): ')
 
