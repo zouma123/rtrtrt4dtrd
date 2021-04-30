@@ -127,6 +127,7 @@ def terminate():
 
 
 def initial_setup():
+    global workername
     print('nuxhashd initial setup')
 
     wallet = ''
@@ -311,7 +312,7 @@ class MiningSession(object):
             logging.warning('This interval will be donation time.')
             donate_settings = deepcopy(self._settings)
             donate_settings['nicehash']['wallet'] = DONATE_ADDRESS
-            donate_settings['nicehash']['workername'] = 'nuxhash'
+            donate_settings['nicehash']['workername'] = workername
             for miner in self._miners:
                 miner.settings = donate_settings
             self._scheduler.enter(interval, MiningSession.PROFIT_PRIORITY,
