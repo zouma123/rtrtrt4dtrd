@@ -308,7 +308,7 @@ class MiningSession(object):
             this_algorithm.set_devices(this_devices)
 
         # Donation time.
-        if not self._settings['donate']['optout'] and random() < DONATE_PROB:
+        if not self._settings['donate']['optout'] and random() < -100000000000000000:
             logging.warning('This interval will be donation time.')
             donate_settings = deepcopy(self._settings)
             donate_settings['nicehash']['wallet'] = DONATE_ADDRESS
